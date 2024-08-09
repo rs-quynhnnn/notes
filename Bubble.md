@@ -100,6 +100,10 @@ Trong phần Data Privacy Rules, bạn có thể thiết lập các quy tắc b�
 
 Trong Bubble, mục **Design** cho phép bạn tùy chỉnh giao diện người dùng (UI) của ứng dụng web mà bạn đang phát triển một cách linh hoạt và dễ dàng. Từ việc thiết kế giao diện đến xử lý sự tương tác của người dùng, mục Design cung cấp các công cụ và tính năng để bạn tạo ra trải nghiệm người dùng tốt nhất có thể.
 
+<p align="center" width="100%">
+  <img src="images/design.avif" alt="Drag-and-Drop">
+</p>
+
 ### Drag-and-Drop Editor
 
 Bubble cung cấp trình chỉnh sửa giao diện kéo và thả (drag-and-drop), giúp bạn dễ dàng tạo và sắp xếp các phần tử trên trang web mà không cần viết mã lập trình.
@@ -137,6 +141,10 @@ Bubble cho phép bạn tạo các phần tử giao diện (elements) có thể t
 ### Workflow trong ứng dụng website
 
 Bubble Workflows được sử dụng để xác định những gì xảy ra khi người dùng tương tác với ứng dụng của bạn (ví dụ: lưu thông tin mà Người dùng vừa nhập, lưu tùy chọn của Người dùng, lưu thông tin về Người dùng, hiển thị cửa sổ bật lên, hiển thị cảnh báo, gửi email, kết nối với API bên ngoài, v.v.).
+
+<p align="center" width="100%">
+  <img src="images/workflow-actions.avif" alt="Reusable Elements">
+</p>
 
 Mỗi workflows bao gồm hai phần: **1 event** và **1 hoặc nhiều actions**
 
@@ -188,6 +196,12 @@ Ví dụ: Gửi email chúc mừng sinh nhật đến người dùng
   </p>
 
 ## 🔷Plugin
+
+Ngoài việc sử dụng các tính năng mặc định của Bubble, bạn có thể cài thêm plugin hoặc tự viết để mở rộng tính năng của app.
+
+Ví dụ bạn làm tính năng Analytics thì có thể cài thêm plugin `chart.js`, làm thanh toán có thể cài thêm `Stripe` hoặc `Paypal`
+
+Có plugin của Bubble giúp bạn connect với API hoặc với 1 app Bubble khác
 
 ## 🔷Styles
 
