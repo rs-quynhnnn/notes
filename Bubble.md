@@ -4,13 +4,11 @@
 
 - **[Tổng quan về Bubble](#tổng-quan-về-bubble)**
 - **[Cơ sở dữ liệu](#cơ-sở-dữ-liệu)**
-- **[Data View](#data-view)**
-- **[Danh sách và truy cập dữ liệu theo code](#danh-sách-và-truy-cập-dữ-liệu-theo-code)**
-- **[Giao tiếp giữa các đối tượng](#giao-tiếp-giữa-các-đối-tượng)**
-- **[Structured Data Type](#structured-data-type)**
-- **[Cập nhật Database](#cập-nhật-database)**
-- **[Thiết kế và mô hình hoá màn hình](#thiết-kế-và-mô-hình-hoá-màn-hình)**
-- **[Tip](#tip)**
+- **[Giao diện xây dựng website](#giao-diện-xây-dựng-website)**
+- **[Workflow](#workflow)**
+- **[Plugin](#plugin)**
+- **[Styles](#styles)**
+- **[Logs](#logs)**
 
 ## 🔷Tổng quan về Bubble
 
@@ -63,13 +61,15 @@ Bubble sử dụng cơ sở dữ liệu nhúng. Nó kém mạnh mẽ hơn cơ s�
 - **Relationship**
   Khái niệm "relationship" (mối quan hệ) thường được sử dụng để liên kết giữa các bảng dữ liệu (Data Types) khác nhau trong cơ sở dữ liệu của ứng dụng. Bubble không sử dụng các mối quan hệ cơ sở dữ liệu tiêu chuẩn. Chúng được cấu hình thông qua các loại. Trong Bubble, có một số loại mối quan hệ chính:
 
-  - **One to One Relationship (1-1):** Một phần tử của bảng này chỉ được liên kết với duy nhất một phần tử của bảng khác.
-  - **One to Many Relationship (1-N):** Một phần tử của bảng này có thể được liên kết với nhiều phần tử của bảng khác.
-  - **Many to Many Relationship (N-N):** Mỗi phần tử trong mỗi bảng có thể được liên kết với nhiều phần tử trong bảng còn lại.
-    Ví dụ:
-    Bạn có thể tạo một mối quan hệ Many to Many giữa hai Data Types `Product` và `Order` bằng cách sử dụng một Data Type trung gian là `Order Detail`. Mỗi sản phẩm có thể được đặt trong nhiều đơn hàng và mỗi đơn hàng cũng có thể chứa nhiều sản phẩm.
+  - `One to One Relationship (1-1)`: Một phần tử của bảng này chỉ được liên kết với duy nhất một phần tử của bảng khác.
+  - `One to Many Relationship (1-N)`: Một phần tử của bảng này có thể được liên kết với nhiều phần tử của bảng khác.
+  - `Many to Many Relationship (N-N)`: Mỗi phần tử trong mỗi bảng có thể được liên kết với nhiều phần tử trong bảng còn lại.
 
-  1. Tạo Data Types `Product`, `Order`, và `Order Detail`.
-  2. Thêm trường `Products` kiểu "List of Products" vào Data Type `Order Detail`
-  3. Thêm trường `Orders` kiểu "List of Orders" vào Data Type `Product`
-  4. Khi hiển thị thông tin của một đơn hàng, bạn có thể truy cập danh sách sản phẩm trong đơn hàng đó thông qua Data Type Order Detail.
+- **Phân quyền**
+  Bubble cung cấp cơ chế bảo vệ dữ liệu thông qua "Data Privacy Rules" để kiểm soát việc truy cập dữ liệu trong ứng dụng.
+
+  Trong phần Data Privacy Rules, bạn có thể thiết lập các quy tắc bảo vệ dữ liệu theo yêu cầu của ứng dụng:
+
+  - `Define Rules`: Bạn có thể xác định các quy tắc riêng biệt cho từng loại dữ liệu (Data Type). Ví dụ, bạn có thể thiết lập quy tắc chỉ cho phép người dùng xem thông tin của chính họ.
+  - `Allow/Block`: Bubble cho phép bạn quyết định ai được phép truy cập, chỉnh sửa hoặc xóa dữ liệu trong cơ sở dữ liệu.
+  - `Constraints`: Bạn có thể áp dụng ràng buộc để kiểm tra điều kiện trước khi cho phép truy cập dữ liệu. Ví dụ, chỉ hiển thị dữ liệu của người dùng nào đang đăng nhập.
