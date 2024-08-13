@@ -211,12 +211,12 @@ Trong Bubble Platform, Plugin là một tính năng mạnh mẽ cho phép ngư�
 2. **Thêm Plugin vào ứng dụng:** Sau khi chọn Plugin cần sử dụng, người dùng có thể thêm Plugin đó vào ứng dụng của mình.
 3. **Tùy chỉnh và tích hợp:** Người dùng có thể tùy chỉnh cấu hình của Plugin để phù hợp với yêu cầu của ứng dụng, sau đó tích hợp Plugin vào trong quy trình phát triển của ứng dụng.
 
-Ví dụ về các loại Plugin phổ biến trên Bubble Platform:
+### Lưu ý khi sử dụng Plugin trong Bubble:
 
-Google Maps Plugin: Cho phép tích hợp Google Maps vào ứng dụng để hiển thị bản đồ, định vị vị trí, tìm đường đi, v.v.
-Chat Plugin: Cung cấp các tính năng liên lạc trực tuyến như chat trực tiếp giữa người dùng.
-Payment Gateway Plugin: Tích hợp các cổng thanh toán như Stripe, PayPal vào ứng dụng để xử lý thanh toán trực tuyến.
-Nhờ có tính năng Plugin, Bubble Platform trở thành một công cụ phát triển ứng dụng mạnh mẽ và linh hoạt, giúp người dùng nhanh chóng xây dựng các ứng dụng web đa dạng mà không cần có kiến thức sâu về lập trình.
+1. **Rủi ro bảo mật:** Việc sử dụng Plugin từ các nguồn không tin cậy có thể tăng rủi ro về bảo mật cho ứng dụng của bạn. Nên lựa chọn Plugin từ các nguồn đáng tin cậy để đảm bảo an toàn thông tin.
+2. **Tiềm ẩn lỗi phần mềm:** Một số Plugin có thể chưa được kiểm tra kỹ lưỡng hoặc không tương thích hoàn toàn với ứng dụng của bạn, dẫn đến tiềm ẩn lỗi phần mềm.
+3. **Phụ thuộc vào bên thứ ba:** Sử dụng quá nhiều Plugin có thể khiến ứng dụng của bạn phụ thuộc quá nhiều vào các bên thứ ba, đồng thời mất đi khả năng kiểm soát và điều chỉnh được Plugin.
+4. **Tăng Workload dự án:** Sử dụng plugin trong các workflow có thể làm tăng đáng kể workload dự án của bạn, hãy cân nhắc sử dụng plugin chỉ khi thật sự cần thiết.
 
 ## 🔷Styles
 
@@ -224,3 +224,43 @@ Nhờ có tính năng Plugin, Bubble Platform trở thành một công cụ phá
 
 Bubble cho phép bạn tùy chỉnh các phong cách (styles) cho các phần tử trên trang, bao gồm màu sắc, font chữ, kích thước, v.v.
 Bạn có thể định nghĩa các kiểu CSS tùy chỉnh hoặc sử dụng các kiểu mẫu được cung cấp sẵn để áp dụng cho các phần tử trên trang web.
+
+ <p align="center" width="100%">
+    <img src="images/custom-css.webp" alt="Style variables">
+  </p>
+
+### Style variables
+
+Style Variables trong Bubble là một tính năng cho phép người dùng định nghĩa các biến cho các giá trị CSS như màu sắc, kích thước, font chữ, v.v. và sử dụng chúng trong toàn bộ ứng dụng một cách linh hoạt. Việc sử dụng Style Variables giúp người dùng quản lý và thay đổi dễ dàng các thuộc tính giao diện của ứng dụng mà không cần phải chỉnh sửa từng phần tử một.
+
+Cách sử dụng Style Variables trong Bubble:
+
+1. Tạo Style Variables: Truy cập vào trình chỉnh sửa giao diện của Bubble Platform, tạo các biến Style Variables dựa trên các giá trị CSS như màu sắc, kích thước, font chữ, v.v.
+
+ <p align="center" width="100%">
+    <img src="images/style-variables.png" alt="Style variables">
+  </p>
+
+2. Sử dụng Style Variables: Áp dụng Style Variables vào các phần tử trên giao diện bằng cách chọn biến tương ứng và thay thế giá trị CSS thông thường bằng biến này.
+
+  <p align="center" width="100%">
+    <img src="images/styles.jpeg" alt="Style variables">
+  </p>
+
+3. Quản lý và cập nhật: Theo dõi và quản lý các Style Variables để có thể cập nhật chúng một cách dễ dàng và nhanh chóng khi cần thiết.
+
+## 🔷Logs
+
+Trong Bubble, Logs là một tính năng quan trọng giúp bạn theo dõi và ghi lại các sự kiện, lỗi hoặc thông tin quan trọng trong quá trình phát triển ứng dụng của mình. Logs cung cấp thông tin chi tiết về các hoạt động xảy ra trong ứng dụng, từ đó giúp bạn phân tích, xác định và sửa lỗi hiệu quả.
+
+Cách sử dụng Logs trong Bubble:
+
+1. **Xem Logs:** Trong trình chỉnh sửa của Bubble, bạn có thể truy cập vào phần Logs để xem các thông tin liên quan đến các sự kiện và lỗi trong ứng dụng của mình.
+2. **Thông tin Logs:** Logs hiển thị các thông tin như thời gian xảy ra sự kiện, mô tả sự kiện, mức độ quan trọng (như Info, Warning, Error), v.v.
+3. **Lọc Logs:** Bạn có thể sử dụng tính năng lọc trong Logs để tìm kiếm các sự kiện cụ thể, cũng như lọc theo mức độ quan trọng hoặc thời gian xảy ra.
+4. **Export Logs:** Để dễ dàng phân tích và chia sẻ thông tin Logs, Bubble cung cấp tính năng xuất Logs ra file để bạn có thể lưu trữ hoặc chia sẻ với đội ngũ phát triển khác.
+5. **Debug và Fix lỗi:** Logs giúp bạn định vị và xác định lỗi trong ứng dụng, từ đó giúp quá trình debug và fix lỗi trở nên dễ dàng và hiệu quả hơn.
+
+  <p align="center" width="100%">
+    <img src="images/logs.jpg" alt="Style variables">
+  </p>
