@@ -197,11 +197,26 @@ Ví dụ: Gửi email chúc mừng sinh nhật đến người dùng
 
 ## 🔷Plugin
 
-Ngoài việc sử dụng các tính năng mặc định của Bubble, bạn có thể cài thêm plugin hoặc tự viết để mở rộng tính năng của app.
+Trong Bubble Platform, Plugin là một tính năng mạnh mẽ cho phép người dùng mở rộng khả năng của ứng dụng Bubble bằng cách tích hợp các thành phần, chức năng đã được xây dựng sẵn từ cộng đồng hoặc tự phát triển. Việc sử dụng Plugin giúp người dùng tiết kiệm thời gian và công sức trong việc phát triển ứng dụng, bởi có thể tái sử dụng các thành phần đã có mà không cần phải xây dựng lại từ đầu.
 
-Ví dụ bạn làm tính năng Analytics thì có thể cài thêm plugin `chart.js`, làm thanh toán có thể cài thêm `Stripe` hoặc `Paypal`
+### Ưu điểm của việc sử dụng Plugin trong Bubble Platform:
 
-Có plugin của Bubble giúp bạn connect với API hoặc với 1 app Bubble khác
+1. **Tiết kiệm thời gian và công sức:** Nhờ sử dụng các Plugin có sẵn, người dùng không cần phải xây dựng từ đầu mà vẫn có thể bổ sung chức năng mới vào ứng dụng một cách nhanh chóng.
+2. **Mở rộng khả năng:** Plugin giúp mở rộng khả năng của Bubble Platform, cho phép người dùng tạo ra các ứng dụng phức tạp hơn, đáp ứng nhu cầu đa dạng của người dùng.
+3. **Đa dạng và phong phú:** Thư viện Plugin trên Bubble Platform rất đa dạng và phong phú, bao gồm các loại Plugin từ thiết lập giao diện đến tính năng logic phức tạp.
+
+### Cách sử dụng Plugin trong Bubble Platform:
+
+1. **Tìm kiếm Plugin:** Người dùng có thể tìm kiếm các Plugin trong thư viện Plugin của Bubble Platform. Có thể lựa chọn Plugin miễn phí hoặc trả phí tuỳ theo nhu cầu.
+2. **Thêm Plugin vào ứng dụng:** Sau khi chọn Plugin cần sử dụng, người dùng có thể thêm Plugin đó vào ứng dụng của mình.
+3. **Tùy chỉnh và tích hợp:** Người dùng có thể tùy chỉnh cấu hình của Plugin để phù hợp với yêu cầu của ứng dụng, sau đó tích hợp Plugin vào trong quy trình phát triển của ứng dụng.
+
+Ví dụ về các loại Plugin phổ biến trên Bubble Platform:
+
+Google Maps Plugin: Cho phép tích hợp Google Maps vào ứng dụng để hiển thị bản đồ, định vị vị trí, tìm đường đi, v.v.
+Chat Plugin: Cung cấp các tính năng liên lạc trực tuyến như chat trực tiếp giữa người dùng.
+Payment Gateway Plugin: Tích hợp các cổng thanh toán như Stripe, PayPal vào ứng dụng để xử lý thanh toán trực tuyến.
+Nhờ có tính năng Plugin, Bubble Platform trở thành một công cụ phát triển ứng dụng mạnh mẽ và linh hoạt, giúp người dùng nhanh chóng xây dựng các ứng dụng web đa dạng mà không cần có kiến thức sâu về lập trình.
 
 ## 🔷Styles
 
